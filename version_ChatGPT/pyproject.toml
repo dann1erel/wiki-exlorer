@@ -1,0 +1,24 @@
+[project]
+name = "wiki-explorer-gpt"
+version = "0.1.0"
+description = "CLI-утилита для получения и анализа информации из Wikipedia"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "click",
+    "requests",
+    "rich",
+    "networkx",
+    "matplotlib"
+]
+
+[project.scripts]
+wiki-explorer-gpt = "wiki_explorer.cli:cli"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["wiki_explorer*"]
+exclude = ["tests*", "downloads*", "pictures*", "output*"]

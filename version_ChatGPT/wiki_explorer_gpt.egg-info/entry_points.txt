@@ -1,0 +1,2 @@
+[console_scripts]
+wiki-explorer-gpt = wiki_explorer.cli:cli
